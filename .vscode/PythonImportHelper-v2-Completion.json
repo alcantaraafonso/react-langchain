@@ -1,0 +1,75 @@
+[
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "ChatOpenAI",
+        "importPath": "langchain_openai",
+        "description": "langchain_openai",
+        "isExtraImport": true,
+        "detail": "langchain_openai",
+        "documentation": {}
+    },
+    {
+        "label": "PromptTemplate",
+        "importPath": "langchain.prompts",
+        "description": "langchain.prompts",
+        "isExtraImport": true,
+        "detail": "langchain.prompts",
+        "documentation": {}
+    },
+    {
+        "label": "AgentAction",
+        "importPath": "langchain.schema",
+        "description": "langchain.schema",
+        "isExtraImport": true,
+        "detail": "langchain.schema",
+        "documentation": {}
+    },
+    {
+        "label": "AgentFinish",
+        "importPath": "langchain.schema",
+        "description": "langchain.schema",
+        "isExtraImport": true,
+        "detail": "langchain.schema",
+        "documentation": {}
+    },
+    {
+        "label": "Tool",
+        "importPath": "langchain.tools",
+        "description": "langchain.tools",
+        "isExtraImport": true,
+        "detail": "langchain.tools",
+        "documentation": {}
+    },
+    {
+        "label": "tool",
+        "importPath": "langchain.tools",
+        "description": "langchain.tools",
+        "isExtraImport": true,
+        "detail": "langchain.tools",
+        "documentation": {}
+    },
+    {
+        "label": "render_text_description",
+        "importPath": "langchain.tools.render",
+        "description": "langchain.tools.render",
+        "isExtraImport": true,
+        "detail": "langchain.tools.render",
+        "documentation": {}
+    },
+    {
+        "label": "get_text_length",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def get_text_length(text: str) -> int:\n    # returns the length of the text\n    text = text.strip(\"'\\n\").strip('\"')\n    return len(text)\nif __name__ == '__main__':\n    print(\"Hello, World!\")\n    tools = [get_text_length] # list of tools -> passa a instancia de get_text_length\n    template = \"\"\"\n        Answer the following questions as best you can. You have access to the following tools:\n        {tools}",
+        "detail": "main",
+        "documentation": {}
+    }
+]
